@@ -26,10 +26,12 @@
   --text-basic: #333333;
   --text-primery:#FFFFFF;
   --text-secondary:#81B3D2;
+  --text-rare: #666666;
   /* background color */
   --background-basic: #FFFFFF;
   --background-secondary:#81B3D2;
   --background-primery:#EEEEEE;
+  --background-rare:#F2F2F2;
   /* decorative color */
   --decorative-basic:#81B3D2;
   --decorative-focus:#000000;
@@ -292,5 +294,118 @@ img {
 .footer-aside-item {
   font-size: 14px;
   line-height: 26px;
+}
+/* catalog search */
+
+.search {
+  background: url(../img/background-catalog.jpg) center no-repeat;
+  padding-top: 26px;
+  padding-bottom: 32px;
+  color: var(--text-primery);
+
+}
+
+.search-item {
+  border: none;
+}
+
+.search-text {
+  font-family: "PT Sans Bold";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.search-button {
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--text-primery);
+  border: 2px solid var(--text-primery);
+  background: rgba(0, 0, 0, 0);
+  border-radius: 2px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.choice-desc {
+  font-family: "PT Sans Bold";
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.choice-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.choice-list {
+  list-style: none;
+}
+
+.choice-link {
+  color: var(--title-basic);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  opacity: 0.3;
+  border-bottom: 1px dashed var(--decorative-basic);
+}
+
+.choice-link-active {
+  color: var(--decorative-basic);
+  border: none;
+  opacity: 1;
+}
+
+.choice-lists {
+  list-style: none;
+}
+
+.choice-img {
+  background: var(--background-primery);
+}
+
+.choice-name {
+  font-family: "PT Sans Bold";
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--title-basic);
+}
+
+.choice-variety {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.choice-price {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.choice-button {
+  font-family: "PT Sans Bold";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  background: var(--btn-basic);
+  color: var(--title-primery);
+}
+
+.choice-button-booking {
+  background: var(--btn-primery);
+}
+
+.choice-rating {
+  color: var(--text-rare);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  background: var(--background-rare);
 }
 
