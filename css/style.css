@@ -10,7 +10,7 @@
 
 
 @font-face {
-  font-family: "PT Sans Bold";
+  font-family: "PT Sans";
   src: url("../fonts/PTSans-Bold.woff2") format("woff2"),
   url("../fonts/PTSans-Bold.woff");
   font-weight: 700;
@@ -32,12 +32,17 @@
   --background-secondary:#81B3D2;
   --background-primery:#EEEEEE;
   --background-rare:#F2F2F2;
+  --background-replacement:#666666;
   /* decorative color */
   --decorative-basic:#81B3D2;
   --decorative-focus:#000000;
   --decorative-active:#766357;
   --btn-basic: #81B3D2;
+  --btn-basic-darker: #669EC0;
+  --btn-basic-even-darker: #5496BD;
   --btn-primery:#766357;
+  --btn-primery-darker:#604E43;
+  --btn-primery-even-darker:#503E33;
   --input-basic:#F2F2F2;
 }
 
@@ -48,13 +53,10 @@
   margin: 0;
   color: var(--text-basic);
   text-transform: uppercase;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-}
-
-.wrap {
   position: relative;
   width: 1200px;
   margin-right: auto;
@@ -74,7 +76,6 @@ img {
 /* header */
 
 .main-header {
-  font-family: "PT Sans Bold";
   background-color: var(--background-basic);
   font-weight: 700;
   font-size: 14px;
@@ -106,7 +107,7 @@ img {
 /* salutation */
 
 .salutation {
-  background: url(../img/background-index.jpg) var(--background-basic) center no-repeat;
+  background: url(../img/background-index.jpg) var(--background-replacement) center no-repeat;
   text-align: center;
 }
 
@@ -130,7 +131,6 @@ img {
 }
 
 .features-title {
-  font-family: "PT Sans Bold";
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
@@ -156,7 +156,6 @@ img {
 }
 
 .features-title {
-  font-family: "PT Sans Bold";
   font-weight: 700;
   font-size: 21px;
   line-height: 21px;
@@ -169,7 +168,7 @@ img {
 }
 
 .features-image {
-  background: var(--background-secondary) ;
+  background: var(--background-replacement) ;
 }
 
 .features-list {
@@ -177,7 +176,6 @@ img {
 }
 
 .features-item-subtitle {
-  font-family: "PT Sans Bold";
   font-weight: 700;
   font-size: 21px;
   line-height: 21px;
@@ -200,7 +198,6 @@ img {
 }
 
 .searches-title {
-  font-family: "PT Sans Bold";
   font-weight: 700;
   font-size: 30px;
   line-height: 24px;
@@ -221,7 +218,6 @@ img {
   vertical-align: middle;
   border: none;
   text-transform: uppercase;
-  font-family: "PT Sans Bold";
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
@@ -238,7 +234,6 @@ img {
 }
 
 .searches-data {
-  font-family: "PT Sans Bold";
   font-weight: 700;
   font-size: 14px;
   line-height: 26px;
@@ -260,7 +255,6 @@ img {
 }
 
 .footer-link {
-  font-family: "PT Sans Bold";
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
@@ -268,7 +262,6 @@ img {
 }
 
 .footer-phone {
-  font-family: "PT Sans Bold";
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
@@ -310,13 +303,13 @@ img {
 }
 
 .search-text {
-  font-family: "PT Sans Bold";
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
 }
 
 .search-button {
+  border: none;
   text-align: center;
   text-transform: uppercase;
   color: var(--text-primery);
@@ -328,8 +321,12 @@ img {
   line-height: 21px;
 }
 
+.search-button:hover {
+  background: var(--background-basic);
+  color: var(--title-basic);
+}
+
 .choice-desc {
-  font-family: "PT Sans Bold";
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
@@ -354,11 +351,23 @@ img {
   border-bottom: 1px dashed var(--decorative-basic);
 }
 
-.choice-link-active {
+.choice-link:hover {
   color: var(--decorative-basic);
-  border: none;
   opacity: 1;
 }
+
+.choice-link:focus {
+  color: var(--decorative-focus);
+  opacity: 1;
+  border: none;
+}
+
+.choice-link:active {
+  color: var(--decorative-basic);
+  opacity: 1;
+  border: none;
+}
+
 
 .choice-lists {
   list-style: none;
@@ -369,11 +378,19 @@ img {
 }
 
 .choice-name {
-  font-family: "PT Sans Bold";
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   color: var(--title-basic);
+}
+
+.choice-name:hover {
+  color: var(--decorative-basic);
+}
+
+.choice-name:active {
+  color: var(--title-basic);
+  opacity: 0.3;
 }
 
 .choice-variety {
@@ -389,7 +406,6 @@ img {
 }
 
 .choice-button {
-  font-family: "PT Sans Bold";
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
@@ -397,8 +413,24 @@ img {
   color: var(--title-primery);
 }
 
+.choice-button:hover {
+  background: var(--btn-basic-darker);
+}
+
+.choice-button:active {
+  background: var(--btn-basic-even-darker);
+}
+
 .choice-button-booking {
   background: var(--btn-primery);
+}
+
+.choice-button-booking:hover {
+  background: var(--btn-primery-darker);
+}
+
+.choice-button-booking:active {
+  background: var(--btn-primery-even-darker);
 }
 
 .choice-rating {
