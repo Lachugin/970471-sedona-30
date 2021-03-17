@@ -400,8 +400,6 @@ img {
   z-index: 1;
   top: 310px;
   left: 50%;
-  display: flex;
-  justify-content: center;
 }
 
 .searches-form-block {
@@ -488,15 +486,16 @@ img {
   border: none;
   outline: none;
   position:absolute;
-  top: 7px;
-  left: 120px;
+  top: 199px;
+  left: 180px;
   margin: 0 auto;
   cursor: pointer;
   background: rgba(0, 0, 0, 0);
 }
 
 .searches-form-counter-btn-minus-two {
-  left: 86px;
+  left: 412px;
+  top: 199px;
   background: none;
 }
 
@@ -505,10 +504,15 @@ img {
   border: none;
   outline: none;
   position:absolute;
-  top: 10px;
-  right: 10px;
+  top: 202px;
+  right: 300px;
   cursor: pointer;
   background: rgba(0, 0, 0, 0);
+}
+
+.searches-form-counter-btn-plus-two {
+  top: 202px;
+  right: 70px;
 }
 
 .button {
@@ -1153,4 +1157,28 @@ img {
 .searches-form-counter:focus {
   background: var(--input-basic-bg-focus);
   border: 2px solid var(--input-basic-border-focus);
+}
+
+.searches-form-link svg path:hover {
+  fill:var(--decorative-focus);
+}
+
+.searches-form-counter-btn-plus svg path:hover {
+  fill:var(--decorative-focus);
+}
+
+.searches-form-counter-btn-minus svg rect:hover {
+  fill:var(--decorative-focus);
+}
+
+.searches-form-link svg path:active {
+  fill:var(--decorative-basic);
+}
+
+.searches-form-counter-btn-plus svg path:active {
+  fill:var(--decorative-basic);
+}
+
+.searches-form-counter-btn-minus svg rect:active {
+  fill:var(--decorative-basic);
 }
