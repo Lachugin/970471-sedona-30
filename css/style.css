@@ -78,10 +78,6 @@ a {
   text-decoration: none;
 }
 
-input {
-  outline:none;
-}
-
 img {
   max-width: 100%;
   height: auto;
@@ -831,6 +827,7 @@ img {
 }
 
 .search-scale-box {
+  outline: none;
   display: flex;
   align-items: center;
   text-align: center;
@@ -1180,12 +1177,12 @@ img {
 
 .searches-form-item:focus {
   background: var(--input-basic-bg-focus);
-  border: 2px solid var(--input-basic-border-focus);
+  outline-color: var(--input-basic-border-focus);
 }
 
 .searches-form-counter:focus {
   background: var(--input-basic-bg-focus);
-  border: 2px solid var(--input-basic-border-focus);
+  outline-color: var(--input-basic-border-focus);
 }
 
 .searches-form-link svg:hover path {
