@@ -815,7 +815,7 @@ img {
   position: absolute;
   width: 23px;
   height: 23px;
-  background: url(../img/icons/icon-shape.svg) no-repeat;
+  background: url(../img/icons/icon-box.svg) no-repeat;
 }
 
 .search-check-input:checked + .search-check-box {
@@ -1083,7 +1083,6 @@ img {
 }
 
 .choice-text {
-  padding-bottom: 7px;
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
